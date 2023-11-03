@@ -1,0 +1,20 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: /media/david/NVME M.2/tugas/devops/frontend
+    ports:
+      - "8080:8080"
+  backend:
+    build:
+      context: /media/david/NVME M.2/tugas/devops/backend
+    ports:
+      - "8000:8000"
+  #database:
+    #image: phpmyadmin/phpmyadmin
+    #environment:
+      #- PMA_HOST=database_host
+      #- PMA_USER=phpmyadmin_user
+      #- PMA_PASSWORD=phpmyadmin_password
+    #ports:
+      #- "3306:80"
